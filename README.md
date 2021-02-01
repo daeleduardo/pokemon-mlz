@@ -90,7 +90,7 @@ echo "APIDOC_PORT=$(APIDOC_PORT)" >> .env
 ```
 
 *para iniciar a aplicação:*
-Estará disponívem em **http://localhost:5000/**
+Estará disponível em **http://localhost:5000/**
 ```
 python ./pokemon_meliuz/app.py
 ```
@@ -112,7 +112,7 @@ apidoc -i ./pokemon_meliuz/ -o ./docs/apidoc/
 ```
 
 *Visualizar a documentação:*
-Estará disponívem em **http://localhost:49150/**
+Estará disponível em **http://localhost:49150/**
 ```
 APIDOC_PORT=49150 #se já estiver em uso pode-se matar o processo ou trocar a porta
 python ./docs/app.py
@@ -123,7 +123,7 @@ python ./docs/app.py
 
 *Criando o container:*
 Em caso de build:
-Estará disponívem em **http://localhost/**
+Estará disponível em **http://localhost/**
 ```
 make build
 ```
@@ -131,7 +131,7 @@ make build
 *para iniciar a aplicação:*
 
 Quando não precisar dar o build
-Estará disponívem em **http://localhost/**
+Estará disponível em **http://localhost/**
 ```
 make run
 ```
@@ -145,7 +145,7 @@ make test
 
 ```
 *Atualizar e visualizar a documentação:*
-Estará disponívem em **http://localhost:49150/**
+Estará disponível em **http://localhost:49150/**
 ```
 make apidocjs
 
