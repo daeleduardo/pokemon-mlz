@@ -1,5 +1,5 @@
 # Pokemon Méliuz #
-## Observações ## 
+## Observações ##
 #### Sobre a implementação: ####
 *   A ideia da construção desta API foi de ser a versão mais próxima possível para publicação em produção. Desta forma foi pensada em uma solução que inicialmente fosse usada para desenvolvimento e que para a publicação em produção necessitasse do menor número de ajustes possíveis. Por isso o docker foi usado, mas é perfeitamente possível usar sem.
 
@@ -21,7 +21,7 @@
 *   Para documentação foi usado o ApiDocJS por já ter trabalhado previamente com esta ferramenta.
 
 
-## Arquivo Makefile ## 
+## Arquivo Makefile ##
 
 O projeto foi pensado para ser executado no Docker com os comandos no arquivo Makefile, para agilizar/automatizar os processos.
 
@@ -53,7 +53,7 @@ Desliga o container
 
 #### apidocjs ####
 Reinicia o container, apaga a documentação antiga, cria a nova documentação e disponibiliza para visualização via navegador na porta
-que está definida na variavel de ambiente ```APIDOC_PORT``` que por padrão é ```49150```
+que está definida na variável de ambiente ```APIDOC_PORT``` que por padrão é ```49150```
 
 
 ## Instalação: ##
