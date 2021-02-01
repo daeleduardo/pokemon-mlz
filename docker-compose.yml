@@ -1,0 +1,18 @@
+version: '3.7'
+
+volumes:
+    logs:
+        driver: local
+
+services:
+    pokemon-meliuz:
+        build: .
+        image: pokemon-meliuz
+        container_name: pokemon-meliuz
+        working_dir: /usr/src/app
+        ports:
+            - 80:${FLASK_PORT}
+            - ${APIDOC_PORT}:${APIDOC_PORT}
+        tty: true
+        volumes:
+            - .:/usr/src/app

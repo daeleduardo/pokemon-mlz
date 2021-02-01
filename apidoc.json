@@ -1,0 +1,6 @@
+{
+    "name": "Pokedex for teams",
+    "version": "0.1.0",
+    "description": "Search pokemons and register teams",
+    "sampleUrl" : "http://localhost"
+  }
