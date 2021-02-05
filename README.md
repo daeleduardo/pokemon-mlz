@@ -1,6 +1,6 @@
-# Pokemon Méliuz
-##Observações 
-####Sobre a implementação:
+# Pokemon Méliuz #
+## Observações ##
+#### Sobre a implementação: ####
 *   A ideia da construção desta API foi de ser a versão mais próxima possível para publicação em produção. Desta forma foi pensada em uma solução que inicialmente fosse usada para desenvolvimento e que para a publicação em produção necessitasse do menor número de ajustes possíveis. Por isso o docker foi usado, mas é perfeitamente possível usar sem.
 
 *   Foi utilizado o servidor Http Simples, não foi usado o Gunicorn ou NGINX (apesar de serem os mais recomendáveis para o ambiente de produção) devido a falta de tempo hábil para implementação.
@@ -12,7 +12,7 @@
 *   A escolha em programar em Inglês foi apenas por gosto pessoal.
 
 
-####Sobre a stack utilizada: 
+#### Sobre a stack utilizada: ####
 
 *   Para programar a API foi escolhida a linguagem Python e o framework Flask por ter um pouco mais de familiaridade com esta linguagem para programação backend e que teria um menor tempo gasto de aprendizado dos recursos avançados da linguagem + framework, já o framework escolhido se deve ao fato de ser um micro framework e que atende aos requisitos da atividade proposta.
 
@@ -21,42 +21,42 @@
 *   Para documentação foi usado o ApiDocJS por já ter trabalhado previamente com esta ferramenta.
 
 
-##Arquivo Makefile
+## Arquivo Makefile ##
 
 O projeto foi pensado para ser executado no Docker com os comandos no arquivo Makefile, para agilizar/automatizar os processos.
 
 Os comandos disponíveis no Makefile são:
 
-####clean
+#### clean ####
 Limpeza de arquivos temporários do python.
 
-####install:
+#### install: ####
 Instala o `requirements.txt` via pip *(este comando é executado quando o build da imagem é feito)*.
 
-####test:
+#### test: ####
 Prepara o ambiente para testes, inicia o container e executa os testes.
 
-####build:
+#### build: ####
 Inicia o container dando build na imagem.    
 
-####venv:
+#### venv: ####
 Exporta as variáveis de ambiente para a sessão atual e para o arquivo .env que será lido quando iniciar a aplicação.
 
-####run:
+#### run: ####
 Inicia o container sem dar build na imagem.
 
-####shell:
+#### shell: ####
 Alias para acessar o container.
 
-####stop:
+#### stop: ####
 Desliga o container
 
-####apidocjs
+#### apidocjs ####
 Reinicia o container, apaga a documentação antiga, cria a nova documentação e disponibiliza para visualização via navegador na porta
-que está definida na variavel de ambiente ```APIDOC_PORT``` que por padrão é ```49150```
+que está definida na variável de ambiente ```APIDOC_PORT``` que por padrão é ```49150```
 
 
-##Instalação:
+## Instalação: ##
 
 **:negative_squared_cross_mark: Localmente**
 
@@ -90,11 +90,11 @@ echo "APIDOC_PORT=$(APIDOC_PORT)" >> .env
 ```
 
 *para iniciar a aplicação:*
-Estará disponívem em **http://localhost:5000/**
+Estará disponível em **http://localhost:5000/**
 ```
 python ./pokemon_meliuz/app.py
 ```
-###Para Executar os testes e atualizar a documentação:
+### Para Executar os testes e atualizar a documentação: ###
 
 *Executar os testes:*
 
@@ -112,7 +112,7 @@ apidoc -i ./pokemon_meliuz/ -o ./docs/apidoc/
 ```
 
 *Visualizar a documentação:*
-Estará disponívem em **http://localhost:49150/**
+Estará disponível em **http://localhost:49150/**
 ```
 APIDOC_PORT=49150 #se já estiver em uso pode-se matar o processo ou trocar a porta
 python ./docs/app.py
@@ -123,7 +123,7 @@ python ./docs/app.py
 
 *Criando o container:*
 Em caso de build:
-Estará disponívem em **http://localhost/**
+Estará disponível em **http://localhost/**
 ```
 make build
 ```
@@ -131,12 +131,12 @@ make build
 *para iniciar a aplicação:*
 
 Quando não precisar dar o build
-Estará disponívem em **http://localhost/**
+Estará disponível em **http://localhost/**
 ```
 make run
 ```
 
-###Para Executar os testes e atualizar a documentação:
+### Para Executar os testes e atualizar a documentação: ###
 
 *Executar os testes:*
 
@@ -145,7 +145,7 @@ make test
 
 ```
 *Atualizar e visualizar a documentação:*
-Estará disponívem em **http://localhost:49150/**
+Estará disponível em **http://localhost:49150/**
 ```
 make apidocjs
 
