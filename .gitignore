@@ -130,7 +130,7 @@ dmypy.json
 
 #sqlite file
 *.db
-databases/
+databases/*.db
 
 #configurations IDE files
 .vscode
