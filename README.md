@@ -1,4 +1,4 @@
-# Pokemon Méliuz #
+# Pokemon Mlz #
 ## Observações ##
 #### Sobre a implementação: ####
 *   A ideia da construção desta API foi de ser a versão mais próxima possível para publicação em produção. Desta forma foi pensada em uma solução que inicialmente fosse usada para desenvolvimento e que para a publicação em produção necessitasse do menor número de ajustes possíveis. Por isso o docker foi usado, mas é perfeitamente possível usar sem.
@@ -75,7 +75,7 @@ npm install apidoc -g
 
 *criando o arquivo .env e setando as variáveis de ambiente.*
 ```
-export FLASK_APP=pokemon_meliuz/app.py
+export FLASK_APP=pokemon_mlz/app.py
 export FLASK_ENV=development
 export FLASK_HOST=0.0.0.0
 export FLASK_PORT=5002
@@ -92,7 +92,7 @@ echo "APIDOC_PORT=$(APIDOC_PORT)" >> .env
 *para iniciar a aplicação:*
 Estará disponível em **http://localhost:5000/**
 ```
-python ./pokemon_meliuz/app.py
+python ./pokemon_mlz/app.py
 ```
 ### Para Executar os testes e atualizar a documentação: ###
 
@@ -100,14 +100,14 @@ python ./pokemon_meliuz/app.py
 
 ```
 rm -rf databases/test.db
-FLASK_ENV=test pytest tests/ -v --cov=pokemon_meliuz
+FLASK_ENV=test pytest tests/ -v --cov=pokemon_mlz
 
 ```
 *Atualizar a documentação:*
 
 ```
 sudo rm -rf ./docs/apidoc/
-apidoc -i ./pokemon_meliuz/ -o ./docs/apidoc/
+apidoc -i ./pokemon_mlz/ -o ./docs/apidoc/
 
 ```
 

@@ -5,10 +5,10 @@ volumes:
         driver: local
 
 services:
-    pokemon-meliuz:
+    pokemon-mlz:
         build: .
-        image: pokemon-meliuz
-        container_name: pokemon-meliuz
+        image: pokemon-mlz
+        container_name: pokemon-mlz
         working_dir: /usr/src/app
         ports:
             - 80:${FLASK_PORT}

@@ -6,7 +6,7 @@ define({ "api": [
     "name": "Get_All_Pokemons",
     "group": "Pokedex",
     "version": "0.0.0",
-    "filename": "/usr/src/app/pokemon_meliuz/app.py",
+    "filename": "/usr/src/app/pokemon_mlz/app.py",
     "groupTitle": "Pokedex",
     "success": {
       "fields": {
@@ -139,7 +139,7 @@ define({ "api": [
     "name": "Get_All_Pokemons_By_Name",
     "group": "Pokedex",
     "version": "0.0.0",
-    "filename": "/usr/src/app/pokemon_meliuz/app.py",
+    "filename": "/usr/src/app/pokemon_mlz/app.py",
     "groupTitle": "Pokedex",
     "success": {
       "fields": {
@@ -272,7 +272,7 @@ define({ "api": [
     "name": "Get_All_Pokemons_By_Number",
     "group": "Pokedex",
     "version": "0.0.0",
-    "filename": "/usr/src/app/pokemon_meliuz/app.py",
+    "filename": "/usr/src/app/pokemon_mlz/app.py",
     "groupTitle": "Pokedex",
     "success": {
       "fields": {
@@ -412,7 +412,7 @@ define({ "api": [
     "name": "Get_All_Pokemons_By_Types",
     "group": "Pokedex",
     "version": "0.0.0",
-    "filename": "/usr/src/app/pokemon_meliuz/app.py",
+    "filename": "/usr/src/app/pokemon_mlz/app.py",
     "groupTitle": "Pokedex",
     "success": {
       "fields": {
@@ -532,7 +532,7 @@ define({ "api": [
     "name": "Get_All_Teams",
     "group": "Teams",
     "version": "0.0.0",
-    "filename": "/usr/src/app/pokemon_meliuz/app.py",
+    "filename": "/usr/src/app/pokemon_mlz/app.py",
     "groupTitle": "Teams",
     "success": {
       "fields": {
@@ -706,7 +706,7 @@ define({ "api": [
       ]
     },
     "version": "0.0.0",
-    "filename": "/usr/src/app/pokemon_meliuz/app.py",
+    "filename": "/usr/src/app/pokemon_mlz/app.py",
     "groupTitle": "Teams",
     "error": {
       "fields": {
@@ -770,7 +770,7 @@ define({ "api": [
     "name": "Get_Team_By_Id",
     "group": "Teams",
     "version": "0.0.0",
-    "filename": "/usr/src/app/pokemon_meliuz/app.py",
+    "filename": "/usr/src/app/pokemon_mlz/app.py",
     "groupTitle": "Teams",
     "success": {
       "fields": {
@@ -875,7 +875,7 @@ define({ "api": [
     "name": "Remove_Pokemons_Team",
     "group": "Teams",
     "version": "0.0.0",
-    "filename": "/usr/src/app/pokemon_meliuz/app.py",
+    "filename": "/usr/src/app/pokemon_mlz/app.py",
     "groupTitle": "Teams",
     "success": {
       "fields": {
@@ -988,7 +988,7 @@ define({ "api": [
       ]
     },
     "version": "0.0.0",
-    "filename": "/usr/src/app/pokemon_meliuz/app.py",
+    "filename": "/usr/src/app/pokemon_mlz/app.py",
     "groupTitle": "Teams",
     "success": {
       "fields": {
@@ -1100,7 +1100,7 @@ define({ "api": [
       ]
     },
     "version": "0.0.0",
-    "filename": "/usr/src/app/pokemon_meliuz/app.py",
+    "filename": "/usr/src/app/pokemon_mlz/app.py",
     "groupTitle": "Teams",
     "success": {
       "fields": {

@@ -1,11 +1,11 @@
-FLASK_APP=pokemon_meliuz/app.py
+FLASK_APP=pokemon_mlz/app.py
 FLASK_ENV=development
 FLASK_HOST=0.0.0.0
 FLASK_PORT=5002
 PYTHONPATH=venv
 APIDOC_PORT=49150
 
-CONTAINER_NAME=pokemon-meliuz
+CONTAINER_NAME=pokemon-mlz
 
 clean:
 	@find ./ -name '*.pyc' -exec rm -f {} \;
@@ -27,11 +27,11 @@ test: run
 	rm -rf databases/test.db
 	export FLASK_ENV=test
 	echo "FLASK_ENV=test"  > .env
-	#FLASK_ENV=test pytest tests/ -v --cov=pokemon_meliuz
-	docker exec $(CONTAINER_NAME) pytest /usr/src/app/tests/ -v --cov=pokemon_meliuz
+	#FLASK_ENV=test pytest tests/ -v --cov=pokemon_mlz
+	docker exec $(CONTAINER_NAME) pytest /usr/src/app/tests/ -v --cov=pokemon_mlz
 
 build: env
-	#docker build -t $(CONTAINER_NAME):latest ./docker-images/pokemon-meliuz
+	#docker build -t $(CONTAINER_NAME):latest ./docker-images/pokemon-mlz
 	docker-compose up -d --build
 
 env:
@@ -60,6 +60,6 @@ stop:
 
 apidocjs: stop run
 	docker exec -d $(CONTAINER_NAME) rm -rf /usr/src/app/docs/apidoc/
-	docker exec -d $(CONTAINER_NAME) apidoc -i /usr/src/app/pokemon_meliuz -o /usr/src/app/docs/apidoc/
+	docker exec -d $(CONTAINER_NAME) apidoc -i /usr/src/app/pokemon_mlz -o /usr/src/app/docs/apidoc/
 	sleep 3
 	docker exec -d $(CONTAINER_NAME) python3 /usr/src/app/docs/app.py

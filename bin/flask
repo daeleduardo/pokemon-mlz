@@ -1,4 +1,4 @@
-#!/home/daniel/workspace/pokemon-meliuz/bin/python
+#!/home/daniel/workspace/pokemon-mlz/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

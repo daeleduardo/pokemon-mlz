@@ -6,7 +6,7 @@ def read(filename):
 
 
 setup(
-    name="pokemon_meliuz",
+    name="pokemon_mlz",
     version="0.1.0",
     description="App to create pokemons teams!",
     packages=find_packages(),
