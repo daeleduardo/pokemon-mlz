@@ -3,7 +3,7 @@
 #### Sobre a implementação: ####
 *   A ideia da construção desta API foi de ser a versão mais próxima possível para publicação em produção. Desta forma foi pensada em uma solução que inicialmente fosse usada para desenvolvimento e que para a publicação em produção necessitasse do menor número de ajustes possíveis. Por isso o docker foi usado, mas é perfeitamente possível usar sem.
 
-*   Foi utilizado o servidor Http Simples, não foi usado o Gunicorn ou NGINX (apesar de serem os mais recomendáveis para o ambiente de produção) devido a falta de tempo hábil para implementação.
+*   Foi utilizado o servidor Http Simples, não foi usado o Gunicorn ou NGINX (apesar de serem os mais recomendáveis para o ambiente de produção) por ser apenas um protótipo inicial.
 
 *   Foi usado o docker compose pois, apesar de haver apenas um container, já está estruturado para que caso precise, em um próximo momento outros containers serem iniciados junto com este.
 
